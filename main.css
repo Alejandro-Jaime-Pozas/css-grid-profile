@@ -1,6 +1,7 @@
 body {
     background-color: lightblue;
     color: brown;
+    height: 1000px;
 }
 
 .container {  
@@ -17,7 +18,16 @@ body {
       ". posts posts posts posts .";
   }
   
-  .navbar { grid-area: navbar; }
+.navbar { 
+    grid-area: navbar; 
+    /* default for flex display is STRETCH.. */
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
   
   .prof-pic { grid-area: prof-pic; }
   
@@ -25,3 +35,10 @@ body {
   
   .posts { grid-area: posts; }
   
+  .container > div {
+
+  }
+
+  .navbar a {
+    color: white;
+  }
