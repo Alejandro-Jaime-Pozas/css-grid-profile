@@ -68,10 +68,31 @@ body {
 
   .posts { 
     grid-area: posts;
-    
 }
   
+.post-card {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links a {
+    color: black;
+}
+
+.card-links a:hover {
+    color: black;
+    background-color: aquamarine;
+}
 
   /* .container > div {
     border: 1px solid grey
   } */
+
+  h3 {
+    margin: 0;
+  }
